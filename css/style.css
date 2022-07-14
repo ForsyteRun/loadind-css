@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.loading__title {
+  margin: 0 10px 0 0;
+}
+
+.loading span {
+  margin-right: 10px;
+}
+
+.loading span:last-child {
+  margin-right: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  background-color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading__title {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: red;
+  -webkit-animation: load 10.5s infinite alternate;
+          animation: load 10.5s infinite alternate;
+}
+
+.loading__point {
+  display: inline-block;
+  background-color: #fff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-animation: point 1.0s  infinite;
+          animation: point 1.0s  infinite;
+}
+
+.point1 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.point2 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.point3 {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+@-webkit-keyframes load {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: green;
+  }
+}
+
+@keyframes load {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: green;
+  }
+}
+
+@-webkit-keyframes point {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes point {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
